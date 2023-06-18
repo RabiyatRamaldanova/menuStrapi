@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {CategoryString} from '../types';
 
-const instance = axios.create({baseURL: 'http://192.168.1.100:1337/api/'});
+const instance = axios.create({baseURL: 'http://localhost:1337/api/'});
 
 export const getCategories = async () => {
   const result = await instance
