@@ -41,7 +41,8 @@ const DishesList = () => {
       <Text style={styles.welcomeText}>Hello! 👋</Text>
       <FlatList
         horizontal
-        style={{height: 50, marginVertical: 20}}
+        showsHorizontalScrollIndicator={false}
+        style={styles.categoryList}
         data={categoryList}
         renderItem={categoryItem}
       />
@@ -66,5 +67,10 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#485563',
     marginTop: 20,
+  },
+  categoryList: {
+    maxHeight: 50,
+    minHeight: 50,
+    marginVertical: 20,
   },
 });
