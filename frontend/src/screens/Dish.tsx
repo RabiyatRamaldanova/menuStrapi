@@ -12,10 +12,7 @@ const Dish = () => {
         source={{uri: choosedDish.attributes.imgURL}}
       />
       <View style={{paddingHorizontal: 10}}>
-        <Text
-          style={styles.descriptionText}
-          numberOfLines={2}
-          ellipsizeMode="tail">
+        <Text style={styles.descriptionText}>
           {choosedDish.attributes.description}
         </Text>
       </View>
@@ -64,7 +61,6 @@ const styles = StyleSheet.create({
   descriptionText: {
     fontSize: 15,
     color: 'black',
-    width: 330,
   },
   image: {height: 300, width: '100%'},
 });
